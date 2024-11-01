@@ -1,0 +1,110 @@
+body {
+  font-family: Open Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+  color: #FFFFFF;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+section {
+  padding: 2em;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 400px;
+}
+
+h1, h2 {
+  color: #2989d8;
+}
+
+#contato {
+  clear: both;
+}
+
+#sobre {
+  color: white;
+}
+
+#sobre p {
+  position: relative;
+  width: 950px;
+}
+
+#sobre img {
+  width: 300px;
+  height: 400px;
+  float: left;
+  padding: 0 15px 0 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  padding-left: 160px;
+  padding-top: 50px;
+}
+
+.projeto img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projeto h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #c7c7c7;
+}
+
+.projeto p {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #34C759;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width:939px) {
+  section {
+    
+  }
+  
+
+}
