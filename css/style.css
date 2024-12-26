@@ -173,8 +173,14 @@ footer {
     margin: 25px;
     padding: 20px;
     display: block;
-    
   }
 
+  #home button {
+    width: 150px;
+  }
+
+  #home h1 {
+    
+  }
 
 }
