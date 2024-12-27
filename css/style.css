@@ -170,9 +170,9 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   body {
-    width: 500px;
+    width: 100%;
   }
 
   #home {
