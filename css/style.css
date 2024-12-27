@@ -3,9 +3,17 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;  /* Adicionando altura de 100% */
+  overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+
 body {
   font-family: Open Sans, sans-serif;
   background-color: rgba(255, 255, 255, 0.788);
+  display: flex;
+  flex-direction: column;
+  height: 100%;  /* Certificando-se de que o body ocupe 100% da altura */
 }
 
 header {
@@ -40,7 +48,8 @@ section {
   padding: 2em;
   border-bottom: 1px solid #ddd;
   width: 100%;
-  height: 900px;
+  min-height: 100vh; /* Usando altura mínima para garantir que preencha a tela */
+  box-sizing: border-box; /* Garantir que o padding não sobreponha o conteúdo */
 }
 
 h1, h2 {
@@ -59,7 +68,7 @@ h1, h2 {
   font-weight: 400;
 }
 
-.hero-img {
+#home img {
   display: flex;
   width: 250px;
   height: 250px;
@@ -110,14 +119,22 @@ h1, h2 {
 #projetos {
   margin: 0;
   padding: 0;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 #projetos h2 {
-  position: relative;
-  font-size: 2.0em;
-  margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  position: static;
+  font-size: 2rem;
+  margin-bottom: 20px;
   left: 5%;
+  clear: both;
 }
 
 .projeto {
@@ -125,6 +142,8 @@ h1, h2 {
   flex-direction: column;
   align-items: center;
   float: left;
+  width: 30%;
+  margin-bottom: 20px;
   padding-left: 160px;
   padding-top: 50px;
   position: relative;
@@ -132,7 +151,8 @@ h1, h2 {
 }
 
 .projeto img {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
@@ -164,6 +184,7 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Ajustes para dispositivos móveis */
 @media screen and (max-width: 768px) {
   body {
     width: 100%;
@@ -183,6 +204,4 @@ footer {
   #home button {
     width: 120px;
   }
-  
-
 }
